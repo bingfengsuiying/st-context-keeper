@@ -1,0 +1,111 @@
+/* 聊天保留层 Context Keeper — 桌面 + 移动端 */
+
+.ctx-keeper-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0;
+    flex-wrap: wrap;
+}
+
+.ctx-keeper-row .text_pole {
+    width: 80px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.ctx-keeper-status {
+    font-size: calc(var(--mainFontSize) * 0.85);
+    opacity: 0.8;
+    line-height: 1.45;
+    margin: 4px 0 6px;
+    word-break: break-word;
+}
+
+.ctx-keeper-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.ctx-keeper-hint {
+    display: block;
+    opacity: 0.65;
+    line-height: 1.4;
+}
+
+/* 魔杖菜单里的两个快捷入口 */
+.ctx-keeper-menu-item {
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.ctx-keeper-off {
+    opacity: 0.65;
+}
+
+.ctx-keeper .menu_button {
+    touch-action: manipulation;
+}
+
+/* ---------- 手机 / 触屏 ---------- */
+
+@media (max-width: 768px), (pointer: coarse) {
+    .ctx-keeper .checkbox_label {
+        min-height: 44px;
+        align-items: center;
+        gap: 8px;
+        /* 让整行都能点，避免只点中小方块 */
+        margin: 0;
+        padding: 2px 0;
+    }
+
+    .ctx-keeper .checkbox_label input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+    }
+
+    .ctx-keeper-row {
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    .ctx-keeper-row .text_pole {
+        /* 16px 可以避免 iOS Safari 聚焦时自动放大页面 */
+        font-size: 16px;
+        width: 96px;
+        min-width: 72px;
+        height: 40px;
+        padding: 4px 8px;
+    }
+
+    .ctx-keeper-status {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .ctx-keeper-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ctx-keeper-actions .menu_button {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .ctx-keeper-hint {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #ctx_keeper_menu_toggle,
+    #ctx_keeper_menu_keep {
+        min-height: 44px;
+    }
+}

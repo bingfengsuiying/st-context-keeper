@@ -1,0 +1,10 @@
+{
+    "display_name": "聊天保留层 Context Keeper",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "WorkBuddy",
+    "version": "1.1.0"
+}
