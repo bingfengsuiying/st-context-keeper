@@ -12,10 +12,10 @@
 
 ## 2. 推送到 GitHub
 
-在仓库根目录执行（把 `你的用户名` 换成实际用户名）：
+在仓库根目录执行（把 `bingfengsuiying` 换成实际用户名）：
 
 ```bash
-git remote add origin https://github.com/你的用户名/st-context-keeper.git
+git remote add origin https://github.com/bingfengsuiying/st-context-keeper.git
 git branch -M main
 git push -u origin main
 git push origin --tags
@@ -25,7 +25,7 @@ git push origin --tags
 令牌需要 `repo` 权限。也可以改用 SSH：
 
 ```bash
-git remote set-url origin git@github.com:你的用户名/st-context-keeper.git
+git remote set-url origin git@github.com:bingfengsuiying/st-context-keeper.git
 git push -u origin main
 ```
 
@@ -46,14 +46,14 @@ git push origin v1.1.0
 扩展面板 → **Install extension** → 填仓库地址：
 
 ```
-https://github.com/你的用户名/st-context-keeper
+https://github.com/bingfengsuiying/st-context-keeper
 ```
 
 ### Termux
 
 ```bash
 cd ~/SillyTavern/public/scripts/extensions/third-party
-git clone https://github.com/你的用户名/st-context-keeper.git
+git clone https://github.com/bingfengsuiying/st-context-keeper.git
 ```
 
 更新：

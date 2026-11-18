@@ -28,7 +28,7 @@ SillyTavern 每条消息上有一个“从提示词中排除消息”的眼睛�
 1. 打开酒馆 → 左侧「扩展」（积木图标）→ **Install extension**；
 2. 填入本仓库地址，例如：
    ```
-   https://github.com/你的用户名/st-context-keeper
+   https://github.com/bingfengsuiying/st-context-keeper
    ```
 3. 安装完成后刷新页面（`Ctrl + F5` 或手机下拉刷新）。
 
@@ -50,7 +50,7 @@ SillyTavern 每条消息上有一个“从提示词中排除消息”的眼睛�
 
 ```bash
 cd SillyTavern/public/scripts/extensions/third-party
-git clone https://github.com/你的用户名/st-context-keeper.git
+git clone https://github.com/bingfengsuiying/st-context-keeper.git
 ```
 
 之后更新只需要：
